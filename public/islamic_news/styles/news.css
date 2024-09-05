@@ -1,0 +1,32 @@
+body{
+    main{
+        .news-box{
+            
+            /* Affichage */
+            display: grid;
+            grid-template-rows: 15% 85%;
+
+            /* Dimension */
+            width: 95%;
+            padding: 10px 10px;
+
+            /* bordures */
+            border-radius: 20px;
+            border: 2px solid black;
+
+            /* Police */
+            color: white;
+            font-size: 1.5rem;
+            
+            /* Arriere-plan */
+            background:url("/Islamic_News/images/th-737392370.jpeg") center/cover;
+
+        }
+        
+        /* Survol de la box */
+        .news-box:hover{
+            transition: 0.5s;
+            box-shadow: 0px 0px 20px 3px #86d1c9;
+          }
+    }
+}

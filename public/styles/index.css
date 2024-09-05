@@ -1,0 +1,95 @@
+
+body{
+    
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+    .categorie{
+        /* Affichage */
+        display: grid;
+        grid-template-rows: 85% 15%;
+        align-items: center;
+  
+        /* Dimension */
+        height: auto;
+        width: 90%;
+        margin: 20px;
+        /* padding: 20px; */
+        padding-bottom: 0;
+        
+        /* Bordures */
+        border: 2px solid #00000082;
+        border-radius: 20px;
+      
+        /* Police */
+        text-align: center;
+        
+        /* Images */
+        img{
+          height: 100%;
+          width: 100%;
+          margin: auto;
+          border-radius: 18px;
+        }
+    }
+
+    .categorie:hover{
+      transition: 0.5s;
+      box-shadow: 0px 0px 20px 3px black;
+    }
+  }
+}
+
+
+/* FLEXBOX */
+/* Sert à repartir équitablement des éléments sur la page */
+
+/* GRID */
+.grid{
+  img{
+    height: 80%;
+    width: 90%;
+    margin: auto;
+  }
+  .grid-container{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  
+    form{
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "i1 i2"
+      "ta ta"
+      "vi bt";
+    
+      input, textarea{
+        margin: 5px;
+        border: 2px solid darkblue;
+        padding: 10px;
+        font-size: 1.1rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+    
+      /* pour spécifier l'emplacement de la textarea */
+      textarea{
+        grid-area: ta;
+        height: 30px;
+        resize: none;
+      }
+
+      #submit {
+        grid-area: bt;
+        background: gray;
+        transition: 0.5s;
+      }
+      #submit:hover{
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}

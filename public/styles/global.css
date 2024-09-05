@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* VH = 100% de la taille de l'écran (Viewport Height) */
+    min-height: 100vh;
+    /* Dimension */
+    padding: 30px 30px;
+    margin: 20px 170px;
+
+    /* Liens */
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    header{
+    
+       
+        li{
+            /* Pour garder les onglets proches des icônes */
+            display: inline-block;
+            /* Pour espacer les onglets entre eux tout en gardant les icônes près de ces derniers */
+            margin-right: 50px;
+        }
+      }
+
+    
+    
+    
+    
+}

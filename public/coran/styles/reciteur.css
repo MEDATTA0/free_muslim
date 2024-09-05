@@ -1,0 +1,120 @@
+body{
+    
+    header{
+        li{
+            display: inline-block;
+            /* Pour espacer les onglets entre eux tout en gardant les icônes près de ces derniers */
+            margin-right: 50px;
+        }
+    }
+
+
+    main{
+
+        /* --------------------------------------infobox----------------------------------------- */
+        #infobox{
+        /* Affichage */
+        display: grid;
+        grid-template-rows: 85% 15%;
+        align-items: center;
+  
+        /* Dimension */
+        height: auto;
+        width: 40%;
+        margin: 20px;
+        /* padding: 20px; */
+        padding-bottom: 0;
+        
+        /* Bordures */
+        border: 2px solid #00000082;
+        border-radius: 20px;
+      
+        /* Police */
+        text-align: center;
+        
+        /* Images */
+        img{
+          height: 100%;
+          width: 100%;
+          margin: auto;
+          border-radius: 18px;
+        }
+      
+      /* :hover{ 
+        transition: 0.5s;
+        box-shadow: 0px 0px 20px 3px #86d1c9;
+      }*/
+        }
+    }
+/* -------------------------------------------------------------------------------------------- */
+
+    /* -----------------------Biographie--------------------------------------------------------- */
+
+    /* Biographie */
+    .biography{
+
+        /* Forme du texte */
+        font-size: 1.5rem;
+        word-spacing: 0.25rem;
+        text-align: justify;
+
+        /* Alinéa pour le paragraphe */
+        text-indent: 2.5cm;
+        
+    }
+/* -------------------------------------------------------------------------------------------- */
+
+    /* ----------------------------Audio---------------------------------------------------------- */
+
+    #audio-block{
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .audio-container{
+        /* Display */
+        display: grid inline;
+        grid-template-columns: 80% 15% 5%;
+
+        /* Dimension */
+        height: 60px;
+        width: 80%;
+    
+        margin: 10px;
+        background: gray;
+        
+        /* bordures */
+        border-radius: 20px;
+    }
+    .audio-container:hover{
+        transition: 0.5s;
+        box-shadow: 0px 0px 20px 3px black;
+    }
+
+    audio{
+        height: 100%;
+        border-radius: 18px;
+    }
+
+    .download-btn{
+        /* Police */
+        font-size: 0.8rem;
+
+        /* Dimensions */
+        padding: 3px;
+        margin: 5px 3.5px;
+
+        /* Bordures */
+        border-radius: 15px;
+    }
+    .download-btn:hover{
+        transition: 0.25s ease;
+        box-shadow: 0px 0px 5px 1px white;
+    }
+    /* ----------------------------------------------------------------------------------------- */
+    
+    
+    ul{
+        list-style: none;
+    }
+}
